@@ -1,6 +1,5 @@
 import styles from "./Section1.module.css";
 import Image from "next/image";
-import Link from "next/link";
 
 const Section1 = () => {
   return (
