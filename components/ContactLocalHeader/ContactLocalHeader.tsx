@@ -27,9 +27,9 @@ const ContactLocalHeader = () => {
                 <div className={`${styles.ul_div} ${isMenuOpen ? styles.menu_open : "" }`}>
                 <ul className={styles.ul}>
                     <Link className={styles.li_Link} href={'/'}><li>HOME</li></Link>
-                    <Link className={styles.li_Link} href={''}><li>BLOG</li></Link>
-                    <Link className={styles.li_Link} href={''}><li>ABOUT US</li></Link>
-                    <Link className={styles.li_Link} href={''}><li>AUTHORS</li></Link>
+                    <Link className={styles.li_Link} href={'/blog'}><li>BLOG</li></Link>
+                    <Link className={styles.li_Link} href={'/about'}><li>ABOUT US</li></Link>
+                    <Link className={styles.li_Link} href={'author'}><li>AUTHORS</li></Link>
                     <Link className={styles.li_Link} href={'/contact'}><li>CONTACT</li></Link>
                 </ul>
                 </div>
