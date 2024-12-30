@@ -26,7 +26,7 @@ const ContactInfo1 = () => {
                         <span className={styles.imag_div}><MdEmail /></span> <span className={styles.desc_div}><Link href={'/'}>muhammadf4060@gmail.com</Link></span>
                     </div>
                     <div className={styles.card}>
-                        <span className={styles.imag_div}><ImLocation2 /></span> <span className={styles.desc_div}><Link href={'/'}>R-484 Rafi Bunglow's <br /> Malir-15 Karachi</Link></span>
+                        <span className={styles.imag_div}><ImLocation2 /></span> <span className={styles.desc_div}><Link href={'/'}>R-484 Rafi Bunglow&#39;s <br /> Malir-15 Karachi</Link></span>
                     </div>
 
                 </div>

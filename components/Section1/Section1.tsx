@@ -78,12 +78,12 @@ const Section1 = () => {
                 </div>
  
                 <div className="md:col-span-2 bg-white p-6 shadow rounded">
-                  <img
-                    alt="A desk with a laptop, flowers, and other office supplies"
-                    className="w-full rounded mb-4"
-                    height="300"
+                  <Image 
                     src="/images/blog-image-1-940x460.jpg"
+                    alt="A desk with a laptop, flowers, and other office supplies"
+                    height="300"
                     width="600"
+                    className="w-full rounded mb-4"
                   />
                   <h2 className="text-gray-800 font-bold text-xl mb-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
