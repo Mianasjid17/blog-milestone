@@ -1,4 +1,4 @@
-import styles from './ContantInfo2.module.css'
+import styles from './ContactInfo2.module.css'
 const ContantInfo2 = () => {
   return (
     <div className={styles.main_containar}>

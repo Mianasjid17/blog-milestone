@@ -29,10 +29,10 @@ const Header = () => {
                 <div className={`${styles.ul_div} ${isMenuOpen ? styles.menu_open : "" }`}>
                 <ul className={styles.ul}>
                     <Link className={styles.li_Link} href={'/'}><li className='text-red-700'>HOME</li></Link>
-                    <Link className={styles.li_Link} href={''}><li>BLOG</li></Link>
-                    <Link className={styles.li_Link} href={''}><li>ABOUT US</li></Link>
+                    <Link className={styles.li_Link} href={'/blog'}><li>BLOG</li></Link>
+                    <Link className={styles.li_Link} href={'/about'}><li>ABOUT US</li></Link>
                     <Link className={styles.li_Link} href={''}><li>AUTHORS</li></Link>
-                    <Link className={styles.li_Link} href={'/contant'}><li>CONTACT</li></Link>
+                    <Link className={styles.li_Link} href={'/contact'}><li>CONTACT</li></Link>
                 </ul>
                 </div>
 
@@ -43,7 +43,7 @@ const Header = () => {
         <div className={styles.content}>
           <h1 className={styles.heading_one}>Lorem ipsum dolor sit amet</h1>
           <p className={styles.heading_two}><span className='text-orange-700'>Blog</span> mollia amenda</p>
-          <Link href={'/contant'}>
+          <Link href={'/contact'}>
           <button className={styles.btn} type="button">CONTACT US</button>
           </Link>
         </div>

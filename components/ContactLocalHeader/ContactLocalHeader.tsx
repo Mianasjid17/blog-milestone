@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './LocalHeader.module.css';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from 'next/image';
+import styles from './ContactLocalHeader.module.css';
 
-const LocalHeader = () => {
+const ContactLocalHeader = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -16,10 +16,6 @@ const LocalHeader = () => {
     <div id='home'>
 
       <div className={styles.bg_img_container}>
-        {/* <video autoPlay muted loop className={styles.bg_video}>
-          <source src="/images/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
         <Image className={styles.bg_img} src={'/images/banner-image-1-1920x500.jpg'} alt='' height={100} width={1000}/>
 
             <div className={styles.navbar}>
@@ -34,7 +30,7 @@ const LocalHeader = () => {
                     <Link className={styles.li_Link} href={''}><li>BLOG</li></Link>
                     <Link className={styles.li_Link} href={''}><li>ABOUT US</li></Link>
                     <Link className={styles.li_Link} href={''}><li>AUTHORS</li></Link>
-                    <Link className={styles.li_Link} href={'/contant'}><li>CONTACT</li></Link>
+                    <Link className={styles.li_Link} href={'/contact'}><li>CONTACT</li></Link>
                 </ul>
                 </div>
 
@@ -52,4 +48,4 @@ const LocalHeader = () => {
   );
 };
 
-export default LocalHeader;
+export default ContactLocalHeader;
