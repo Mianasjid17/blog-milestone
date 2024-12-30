@@ -1,10 +1,11 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './Header.module.css';
+import styles from './LocalHeader.module.css';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Image from 'next/image';
 
-const Header = () => {
+const LocalHeader = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -12,13 +13,14 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div id='home'>
 
-      <div className={styles.bg_video_container}>
-        <video autoPlay muted loop className={styles.bg_video}>
+      <div className={styles.bg_img_container}>
+        {/* <video autoPlay muted loop className={styles.bg_video}>
           <source src="/images/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <Image className={styles.bg_img} src={'/images/banner-image-1-1920x500.jpg'} alt='' height={100} width={1000}/>
 
             <div className={styles.navbar}>
 
@@ -28,7 +30,7 @@ const Header = () => {
 
                 <div className={`${styles.ul_div} ${isMenuOpen ? styles.menu_open : "" }`}>
                 <ul className={styles.ul}>
-                    <Link className={styles.li_Link} href={'/'}><li className='text-red-700'>HOME</li></Link>
+                    <Link className={styles.li_Link} href={'/'}><li>HOME</li></Link>
                     <Link className={styles.li_Link} href={''}><li>BLOG</li></Link>
                     <Link className={styles.li_Link} href={''}><li>ABOUT US</li></Link>
                     <Link className={styles.li_Link} href={''}><li>AUTHORS</li></Link>
@@ -41,16 +43,13 @@ const Header = () => {
                 </div>
 
         <div className={styles.content}>
-          <h1 className={styles.heading_one}>Lorem ipsum dolor sit amet</h1>
-          <p className={styles.heading_two}><span className='text-orange-700'>Blog</span> mollia amenda</p>
-          <Link href={'/contant'}>
-          <button className={styles.btn} type="button">CONTACT US</button>
-          </Link>
+          <h1 className={styles.heading_two}>Feel free to <span className='text-orange-700'>Contact Us</span></h1>
+          <p className={styles.heading_one}>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
         </div>
       </div>
 
     </div>
   );
-}
+};
 
-export default Header;
+export default LocalHeader;

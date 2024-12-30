@@ -1,7 +1,36 @@
+'use client'
 import styles from "./Section1.module.css";
 import Image from "next/image";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Section1 = () => {
+  let date = new Date();
+
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  const day = date.getDay();
+  
+  const updateTime = () => {
+    date = new Date();
+    sethour(date.getHours())
+    setminute(date.getMinutes())
+    setsecond(date.getSeconds())
+    setday(date.getDay())
+  }
+  const [hour, sethour] = useState(hours)
+  const [minute, setminute] = useState(minutes)
+  const [second, setsecond] = useState(seconds)
+  const [dayN, setday] = useState(day)
+
+  
+  useEffect(() => {
+    const timerID = setInterval(() => updateTime(), 1000);
+    return () => clearInterval(timerID);
+  }, []);
+
+
   return (
     <div>
       <div className={styles.main_containar}>
@@ -31,20 +60,18 @@ const Section1 = () => {
 
                 <div className="space-y-4">
                   <div className="bg-white p-4 shadow rounded h-40 content-center text-center">
-                    <h2 className="text-red-500 font-bold">
+                    <h2 className="text-red-500 font-bold text-xl">
                       Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing.
                     </h2>
                   </div>
                   <div className="bg-white p-4 shadow rounded h-40 content-center text-center">
-                    <h2 className="text-gray-800 font-bold">
-                      Aspernatur Excepturi Magni, Placeat Rerum Nobis Magnam
-                      Libero! Soluta.
+                    <h2 className="text-gray-800 font-bold text-xl">
+                    Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.
                     </h2>
                   </div>
                   <div className="bg-white p-4 shadow rounded h-40 content-center text-center">
-                    <h2 className="text-gray-800 font-bold">
-                      Sunt Hic Recusandae Vitae Explicabo Quidem Laudantium
-                      Corrupti Non Adipisci Nihil.
+                    <h2 className="text-gray-800 font-bold text-xl">
+                    Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.
                     </h2>
                   </div>
                   <button className={styles.btnn}>Read More</button>
@@ -68,7 +95,10 @@ const Section1 = () => {
                     </span>
                     <span className="mr-2">
                       <i className="fas fa-calendar-alt"></i>
-                      27.07.2020 10:10
+                      <span>{dayN}</span>~~
+                      <span>{hour}</span>:
+                      <span>{minute}</span>:
+                      <span>{second}</span>
                     </span>
                     <span>
                       <i className="fas fa-comments"></i>
