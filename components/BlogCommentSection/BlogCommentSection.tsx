@@ -13,21 +13,21 @@ const BlogCommentSection = () => {
                     <div className="w-16 h-16 bg-red-500 p-2 rounded-full"></div>
                         <div className="ml-4">
                             <p className="font-bold">John Doe <span className="text-sm text-gray-600">27.07.2020 10:10</span></p>
-                            <p className="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</p>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!</p>
                         </div>
                     </div>
                     <div className="flex items-start mb-4">
                     <div className="w-16 h-16 bg-red-500 p-2 rounded-full"></div>
                         <div className="ml-4">
                             <p className="font-bold">John Doe <span className="text-sm text-gray-600">27.07.2020 11:10</span></p>
-                            <p className="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</p>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!</p>
                         </div>
                     </div>
                     <div className="flex items-start mb-4">
                         <div className="w-16 h-16 bg-red-500 p-2 rounded-full"></div>
                         <div className="ml-4">
                             <p className="font-bold">John Doe <span className="text-sm text-gray-600">27.07.2020 12:10</span></p>
-                            <p className="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</p>
+                            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!</p>
                         </div>
                     </div>
                 </div>
