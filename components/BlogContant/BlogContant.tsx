@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './BlogContant.module.css'
 import Image from 'next/image'
 
@@ -22,7 +23,9 @@ const BlogContant = () => {
             <p className="mb-10">
             Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.
             </p>
+            <Link href={'/blogs/blog1'}>
             <button className={styles.btn}>CONTINUE READING</button>
+            </Link>
 
           </article>
 
@@ -39,9 +42,12 @@ const BlogContant = () => {
             <p className="mb-10">
             Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.
             </p>
+            <Link href={'/blogs/blog2'}>
             <button className={styles.btn}>CONTINUE READING</button>
+            </Link>
 
-          </article> <article>
+          </article> 
+          <article>
             <Image
               src="/images/blog-image-3-940x460.jpg"
               alt="Our Goals"
@@ -54,8 +60,9 @@ const BlogContant = () => {
             <p className="mb-10">
             Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.
             </p>
+            <Link href={'/blogs/blog3'}>
             <button className={styles.btn}>CONTINUE READING</button>
-
+            </Link>
           </article>
           
         </div>

@@ -37,7 +37,7 @@ const Section1 = () => {
         <div className={styles.containar}>
           <div className={styles.text_containar}>
             <h1 className={styles.containar_heading_one}>
-              <span className="text-slate-800">Featured</span>{" "}
+              <span className="text-slate-800">Featured</span>
               <span className="text-orange-600">Blog posts</span>
             </h1>
             <Image
@@ -95,9 +95,9 @@ const Section1 = () => {
                     </span>
                     <span className="mr-2">
                       <i className="fas fa-calendar-alt"></i>
-                      <span>{dayN}</span>~~
-                      <span>{hour}</span>:
-                      <span>{minute}</span>:
+                      <span>{dayN}</span><span>-</span>
+                      <span>{hour}</span><span>:</span>
+                      <span>{minute}</span><span>:</span>
                       <span>{second}</span>
                     </span>
                     <span>

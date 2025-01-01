@@ -3,10 +3,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from 'next/image';
-import styles from './BlogLocalHeader.module.css'
+import styles from './SingleBlogHeading.module.css'
 
-const BlogLocalHeader = () => {
-    
+
+const SingleBlogHeading = () => {
+        
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,7 +40,7 @@ const BlogLocalHeader = () => {
               </div>
 
       <div className={styles.content}>
-        <h1 className={styles.heading_two}>Read our <span className='text-orange-700'>Blog</span></h1>
+        <h1 className={styles.heading_two}>SINGLE <span className='text-orange-700'>BLOG POST</span></h1>
         <p className={styles.heading_one}>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
       </div>
     </div>
@@ -48,4 +49,4 @@ const BlogLocalHeader = () => {
   )
 }
 
-export default BlogLocalHeader
+export default SingleBlogHeading
