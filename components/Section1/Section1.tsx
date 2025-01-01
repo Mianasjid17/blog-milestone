@@ -1,6 +1,7 @@
 'use client'
 import styles from "./Section1.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -112,9 +113,11 @@ const Section1 = () => {
                     sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat
                     imperdiet, molestie nunc ut, accumsan diam.
                   </p>
+                  <Link href={'/blogs/blog1'}>
                   <button className="bg-red-500 text-white font-bold py-2 px-4 rounded shadow">
                     CONTINUE READING
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
